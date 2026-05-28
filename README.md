@@ -15,6 +15,7 @@ Moreover, Grandiloquence's dashboard intends to answer various questions interna
 - What companies/industries/plans cause the most burden on the support team?
 - How does the company's success vary from region-to-region?
 - How frequent is it that a company turns over (churn metrics)?
+
 All of these questions can be efficiently answered via efficient navigation of Grandiloquence's new dashboard.
 
 ## Tech Stack
