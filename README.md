@@ -1,6 +1,6 @@
 # P3: Interactive Data Dashboard
 ## Overview
-Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive dashboard for the author's fictional B2B firm, "Grandiloquence," which provides "convoluted" tech services to companies in need. Grandiloquence's data was synthetically generated using Python's faker, random, and datetime (timedelta) libraries to simulate CRM behavior, and intends to reflect realistic customer lifecycles, churn behavior, and usage measurements. Grandiloquence's dashboard, the focal point of Project 3, was developed in Microsoft Power BI and is directly connected to a PostgreSQL server hosting/storing the synthetically-crafted datatable. However, the datatable (as a CSV), example outputs, and a video walkthrough are all available for viewing in this repository. 
+Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive dashboard for the author's fictional B2B firm, "Grandiloquence," which provides "convoluted" tech services to companies in need. Grandiloquence's data was synthetically generated using Python's faker, random, and datetime (timedelta) libraries to simulate CRM behavior and intends to reflect realistic customer lifecycles, churn behavior, and usage measurements. Grandiloquence's dashboard, the focal point of Project 3, was developed in Microsoft Power BI and is directly connected to a PostgreSQL server hosting/storing the synthetically-crafted datatable. However, the datatable (as a CSV), example outputs, and a video walkthrough are all available for viewing in this repository. 
 
 ## The Why/For What
 The creation of Grandiloquence's data dash aims to:
@@ -62,22 +62,76 @@ The executive overview shows off a few different heavy-hitting metrics/KPIs:
 - `industry` vs. usage
 - `plan_type` vs. usage
 
-The executive overview tab (still-shot) looks like this:
+#### The executive overview tab (still-shot):
+
 <img width="2506" height="1467" alt="Screenshot 2026-05-27 235730" src="https://github.com/user-attachments/assets/25f0f1ee-2ca7-440f-9eb6-a98aca61628f" />
 
 ### Segments & Risks
-The segments & risks 
+As it's name suggests, this section takes a deep-dive into particular segments and potentially associated risks, offering a few unique features:
+- An industry/plan/health heat map that acts as a slicer for other features
+- A `region` card that allows for region-based filtering
+- Segment health score card
+- Positive (optimistic) segment cards for:
+  - Average value created by company
+  - Usage percentage for companies
+  - Total customer count
+- Negative (pessimistic) segment cards for:
+  - Churn rate
+  - Average support tickets put in per company
+  - Total count of "At-Risk" customers
+
+#### The segments & risks tab (still-shot):
+
+<img width="2498" height="1480" alt="Screenshot 2026-05-27 235741" src="https://github.com/user-attachments/assets/464b8ca1-0a89-412e-82fb-62c3ad59670c" />
+
+### Company Drill-Down
+The company drill-down section provides customer-specific details. Its key features include:
+- A customer profile card that displays the client's industry and plan and whether the customer is active and healthy
+- A customer "health status" card (whose values were explained earlier)
+- A "value-created" card displaying how much the customer is worth
+- A health breakdown card specific to the customer.
+
+#### The company drill-down tab (still-shot), with 'Abott and Sons' selected:
+
+<img width="2503" height="1482" alt="Screenshot 2026-05-27 235755" src="https://github.com/user-attachments/assets/7b55f42e-7de1-4c1f-afe4-0fc4cea97ddc" />
+
+### Secondary Features
+Less notable features include:
+- Tooltips
+- Hover-for-help buttons
+- Hover-for-info buttons
+- Back and forth arrows for ease-of-navigation
+- Color-coding for contrast and ease-of-viewing
+- Glow effects to lift each card and separate one from another
+- Labels where needbe
+
 ## Repository Structure
 
 ### interactive_data_dashboard
 10-grandiloquence.csv
 
-20-dashboard_explanation.md
+20-dashboard_still_shots/
 
-30-dashboard_still_shots/
-
-40-grandiloquence_dashboard.mp4
+30-grandiloquence_dashboard.mp4
 
 README.md
 
+## Purely Optional: How to View Project (In Author's Intended Manner)
+- Give `10-grandiloquence.csv` a quick scan to get a fair gauge of the quality/shape of the data used
+- Ask the data whatever questions come to mind
+- Peak at the still shots in `README.md` or `20-dashboard_still_shots/` as a reference to how the dash appears unfiltered/unsliced
+- View `30-grandiloquence_dashboard.mp4` for a brief overview of how the slicing works, how to navigate the dash, etc. (stay for as long or as little as preferred)
+- Assess whether the dash can answer key questions
+
+## Future Improvements
+- Increase depth, messiness, and variability of data
+- Include a time-based variable on date-joined or sign-up date (perhaps "lifespan" of business variable)
+- Expand dashboard into other realms of business intelligence beyond CRM and customer behavior
+
+## The Author
+
+### Edward Noonan
+Data Analyst/Aspiring Data-Scientist with grounding experience in SQL, Python, R/RStudio, BI tools (PowerBI & Tableau), and overall analytics workflows.
+
+This project was developed as part of a post-graduation portfolio to demonstrate real-world data analysis (and engineering) capabilities.
 
