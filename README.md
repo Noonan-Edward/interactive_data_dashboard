@@ -4,7 +4,7 @@ Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive 
 
 The mp4 file might require a download due to its file size; thus, provided below is a link to the video on YouTube where the dashboard can be viewed with no downloads needed.
 
-YouTube Dashboard Walkthrough: https://youtu.be/-EH0sS09wDQ
+### YouTube Dashboard Walkthrough: https://youtu.be/-EH0sS09wDQ
 
 ## The Why/For What
 The creation of Grandiloquence's data dash aims to:
