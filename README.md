@@ -1,4 +1,4 @@
-# P3: Interactive Data Dashboard
+# P3: Interactive Data Dashboard (Incomplete)
 ## Overview
 Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive dashboard for the author's fictional B2B firm, "Grandiloquence," which provides "convoluted" tech services to companies in need. Grandiloquence's data was synthetically generated using Python's faker, random, and datetime (timedelta) libraries to simulate CRM behavior and intends to reflect realistic customer lifecycles, churn behavior, and usage measurements. Grandiloquence's dashboard, the focal point of Project 3, was developed in Microsoft Power BI and is directly connected to a PostgreSQL server hosting/storing the synthetically-crafted datatable. However, the datatable (as a CSV), example outputs, and a video walkthrough are all available for viewing in this repository. 
 
