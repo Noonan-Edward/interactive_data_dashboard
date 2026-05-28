@@ -1,6 +1,10 @@
-# P3: Interactive Data Dashboard (Incomplete)
+# P3: Interactive Data Dashboard
 ## Overview
-Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive dashboard for the author's fictional B2B firm, "Grandiloquence," which provides "convoluted" tech services to companies in need. Grandiloquence's data was synthetically generated using Python's faker, random, and datetime (timedelta) libraries to simulate CRM behavior and intends to reflect realistic customer lifecycles, churn behavior, and usage measurements. Grandiloquence's dashboard, the focal point of Project 3, was developed in Microsoft Power BI and is directly connected to a PostgreSQL server hosting/storing the synthetically-crafted datatable. However, the datatable (as a CSV), example outputs, and a video walkthrough are all available for viewing in this repository. 
+Project 3 (P3: Interactive Data Dashboard) offers a fully-interactive executive dashboard for the author's fictional B2B firm, "Grandiloquence," which provides "convoluted" tech services to companies in need. Grandiloquence's data was synthetically generated using Python's faker, random, and datetime (timedelta) libraries to simulate CRM behavior and intends to reflect realistic customer lifecycles, churn behavior, and usage measurements. Grandiloquence's dashboard, the focal point of Project 3, was developed in Microsoft Power BI and is directly connected to a PostgreSQL server hosting/storing the synthetically-crafted datatable. The datatable (as a CSV), example outputs, and a video walkthrough are all available for viewing in this repository.
+
+The mp4 file might require a download due to its file size; thus, provided below is a link to the video on YouTube where the dashboard can be viewed with no downloads needed.
+
+YouTube Dashboard Walkthrough: https://youtu.be/-EH0sS09wDQ
 
 ## The Why/For What
 The creation of Grandiloquence's data dash aims to:
@@ -44,7 +48,7 @@ The synthetically-generated `10-grandiloquence.csv` datatable offers 12 columns:
 - `nps_score` - net promoter score that measures how likely a company is to recommend Grandiloquence
 
 #### If...
-...you'd like to view the Grandiloquence datatable, feel free to do so & download from `10-grandiloquence.csv`. Moving forward, however, these are the features that will be pulled into Microsoft PowerBI (via a live PostgreSQL connection) for visualizing.
+...you'd like to view the Grandiloquence datatable, feel free to do so & download from `10-data/10-grandiloquence.csv`. Moving forward, however, these are the features that will be pulled into Microsoft PowerBI (via a live PostgreSQL connection) for visualizing.
 
 ## Grandiloquence Dashboard Features
 This dashboard features many useful metrics, calculated fields, and measures imperative to the storytelling of Grandiloquence's current state. The primary measure is that of `Customer Health Score`, which is merely a summation of four other weighted scores: `NPS Score`, `Usage Score`, `Churn Score`, and `Support Burden Score`. These measures are all based on percentiles; thus a customer with the BEST NPS score would receive the highest score in that category, whereas the customer with the highest usage score will receive the highest score in that category, so on and so forth. Customers with a `Customer Health Score` < 20 are labeled as "At-Risk" regarding their "health status." The status for customers with a score >20 & <40 is considered "Moderate." Customers with a score >40 are considered "Safe." Though, the dashboard dives deeper than health statuses and measures.
@@ -109,7 +113,7 @@ Less notable features include:
 ## Repository Structure
 
 ### interactive_data_dashboard
-10-grandiloquence.csv
+10-data/10-grandiloquence.csv
 
 20-dashboard_still_shots/
 
@@ -117,11 +121,11 @@ Less notable features include:
 
 README.md
 
-## Purely Optional: How to View Project (In Author's Intended Manner)
-- Give `10-grandiloquence.csv` a quick scan to get a fair gauge of the quality/shape of the data used
+## How to View Project (In Author's Intended Manner)
+- Give `10-data/10-grandiloquence.csv` a quick scan to get a fair gauge of the quality/shape of the data used
 - Ask the data whatever questions come to mind
 - Peak at the still shots in `README.md` or `20-dashboard_still_shots/` as a reference to how the dash appears unfiltered/unsliced
-- View `30-grandiloquence_dashboard.mp4` for a brief overview of how the slicing works, how to navigate the dash, etc. (stay for as long or as little as preferred)
+- View `30-grandiloquence_dashboard.mp4` for a brief overview of how the slicing works, how to navigate the dash, etc. If the mp4 file requires a download, feel free to view it on the author's YouTube channel with no download required, here: https://youtu.be/-EH0sS09wDQ
 - Assess whether the dash can answer key questions
 
 ## Future Improvements
